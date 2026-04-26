@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact – Rise Within</title>
+  <meta name="description" content="Subscribe for updates or send a message to Rise Within.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="logo" src="assets/images/logo.svg" alt="Rise Within logo">
+        <span>Rise Within</span>
+      </a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a class="cta" href="contact.html">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Contact</h1>
+      <div class="grid two" style="margin-top:16px">
+        <div class="panel" style="padding:24px">
+          <h2>Subscribe</h2>
+          <p class="lead">Get weekly posts and tools in your inbox.</p>
+          <form class="form" action="/api/subscribe" method="post" data-enhance="true">
+            <input type="email" name="email" placeholder="Your email" required>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <div class="notice form-status" role="status" aria-live="polite">Email provider integration will be added later when we finish with the codding.</div>
+          </form>
+        </div>
+        <div class="panel" style="padding:24px">
+          <h2>Send a Message</h2>
+          <p class="lead">Questions about content or suggestions for tools are welcome.</p>
+          <form class="form" action="/api/contact" method="post" data-enhance="true">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button class="btn btn-outline" type="submit">Send</button>
+            <div class="notice form-status" role="status" aria-live="polite">Not for crisis support. For urgent help, contact local services.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="gap:10px">
+          <img class="logo" src="assets/images/logo.svg" alt="Rise Within logo">
+          <span>Rise Within</span>
+        </div>
+        <div class="copyright">© 2026 Rise Within. Not therapy or medical advice.</div>
+      </div>
+      <div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="social">
+          <strong>Connect with Us</strong>
+          <p>Follow us on our social media platforms for daily inspiration and to engage with our content. Let's grow together!</p>
+          <div class="social-links">
+            <a class="brand-ig" href="https://www.instagram.com/r.isewithin/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+              </svg>
+            </a>
+            <a class="brand-tiktok" href="https://www.tiktok.com/@rise1within" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14 3v5.3c1.1 1.2 2.7 2.1 5 2.2v2.2c-2.5-.1-4.3-1-5-1.7V14a4.5 4.5 0 1 1-2-3.98V3h2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
